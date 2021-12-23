@@ -1,0 +1,189 @@
+
+body {
+    margin: 0;
+    padding:0 ;
+    background:url(./img/FondoCrash.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height:100vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+   }
+
+   .box .logotipo {
+    margin: 0;
+    padding: 0mm;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+    position:absolute;
+    top:-60px;
+    left: calc(52px);
+    }
+
+    main {
+    position: relative;
+    top: -250px;
+    left:600px;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+    border-radius: 30px;
+    width: 250px;
+    height: 500px;
+    background-color: black
+    }
+    
+    #mensaje {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 30px;
+  }
+
+    h1 {
+    margin: 0;
+    padding: 100px 20px 15px 20px;
+    text-align: center;
+    font-size: 30px;  
+    }
+    
+    h2 {
+     margin: 0; 
+     padding: 65px 20px 10px 20px;  
+     text-align: center;
+     align-items: center;
+     font-size: 20px;
+    }
+
+    h3 {
+        margin: 0; 
+        padding: 20px 20px 10px 20px; 
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    #cifrar  {
+        margin: 0;
+        padding: 0mm;
+        width: 65px;
+        height: 65px;
+        border-radius: 50% ;
+        position:absolute;
+        top:280px;
+        left: calc(45px);
+        color: red;
+        background-color: grey;
+        border-color: grey;
+        border:grey;
+        font-weight:bold;
+        cursor: pointer;
+    }
+    #descifrar  {
+        margin: 0;
+        padding: 0mm;
+        width: 65px;
+        height: 65px;
+        border-radius: 50% ;
+        position:absolute;
+        top:280px;
+        left: calc(130px);
+        color: red;
+        background-color: grey;
+        border-color: grey;
+        border: grey;
+        font-weight:bold;
+        cursor: pointer;    
+    }
+   
+    #title {
+        padding: 140px; 
+        margin: 0pt;
+        text-align:left ;
+        font-weight:bold;
+        color:blue;
+        display:block;
+        font-size:50px;
+        position: relative; 
+        top:200px;
+        max-width: 250px;
+        animation: bouncel 5s alternate infinite ease-in;
+        }
+        @keyframes bouncel {
+         0%{
+             transform:translate(20%);
+         } 
+         100%{
+             transform:traslate(60%);
+         }
+        }
+
+ #footer {
+    font-size: 25px;
+    position: relative;
+    top: 100px;
+    left:10px;
+    font-weight:700;
+    color: black;
+ }
+#cr {
+    position: relative;
+    top: 60px;
+    left: -20px;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+aside {
+    position: relative;
+    top: -400px;
+    left:290px;
+    font-size: 30px;
+    height: 600px;
+    width: 600px;
+    display: block;
+    color:blue;
+    font-weight:600;
+    font-family: sans-serif;
+    
+}
+#regresar {
+    position: relative;
+    top: -1000px;
+    left:650px;
+    font-size: 30px;
+    height:0;
+    width: 0;
+    border-radius: 0;
+    background:transparent;
+    border-color:transparent;
+    display: block;
+    color:blue;
+    font-weight:600;
+    font-family: sans-serif;
+    cursor:pointer;
+    text-align: center;
+    align-items:center;   
+}
+#face {
+    position: relative;
+    top: 70px;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background:transparent;
+    border-color:transparent;
+
+}
+#insta {
+    position: relative;
+    top: 30px;
+    left: 100px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background:transparent;
+    border-color:transparent;
+}
