@@ -68,14 +68,14 @@ decode: function(text, offSet){ //que le pasa al texto y al desplazamiento
   //obtine codigo ascii del texto, un valor
  if((ascii>=65) && (ascii<=90)){
   // si esta entre este valor y entre este  otro valor, letras mayusculas
-  asciiOffSet = (ascii  - 90 - offSet) % 26 + 90;
+  asciiOffSet = (ascii  + 65 - offSet) % 26 + 65;
 //formula codigo ascii, para letras mayusculas
 //console.log(asciiOffSet);
 cadena += String.fromCharCode(asciiOffSet); 
 //me devuelve una cadena con las letras en su nueva posicion
 
  } else if ((ascii>=97) && (ascii<=122)) {
-   asciiOffSet = (ascii  - 97 - offSet) % 26 + 97;
+   asciiOffSet = (ascii  - 122 - offSet) % 26 + 122;
    //console.log(asciiOffSet);
 
    cadena += String.fromCharCode(asciiOffSet);
