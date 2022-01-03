@@ -462,3 +462,34 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+
+#### Inicio
+Empece mi proyecto, pensando en crear una pagina donde puedieran enviarse mensajes cifrados, que no pudieran ser vulneranos, super seguros.
+Pensado en usar con mujeres empoderadas que necesitan expresarse en codigo para poder alimentar su mente
+Inicie mi pagina en html, cree dos paginas, la primera es el index pagina de bienvenida y la segunda que es pagina donde se desarrolla el cifrado y descifrado.
+## Index HTML
+Dentro del body trabaje el Html semantico
+Coloque un Header, con unos ID para poder  identificar las etiquetas de los elementos.
+Luego coloque un Main, coloque una imagen con el logotipo 
+Dentro de el main coloque un form para colocar el formulario que se asocia con label for para introducir el usuario y una contraseña, cada uno independiente.
+Tambien dentro del main, coloque un button type, para introducir un boton Go le coloco una etiqueta y con el boton  iria a pagina.html
+Luego coloque figure, para colocar un video representativo
+Luego coloque el footer, donde coloque figure para colocar las imagenes de las redes y el copyrigth
+## Pagina HTML
+Dentro del body
+Coloque un Header, con unos Id para poder  identificar las etiquetas de los elementos.
+Luego coloque un Main, coloque una imagen con el logotipo.
+Dentro de el main coloque un form para colocar los input.
+Utilice input text con un id para las ventanas de mensajes de cifrado y descifrado, tambien le agregue al input los atributos de autocomplete off = que no se guarda, spellcheck = que no se subrayacon rojo, placeholder = que se ve ingrese su usuario.
+Cree un elemento input number para crear el desplazamiento, con un id para identificarlo.
+Luego cree los botenes de cifrar y descifrar con button type y con un id para poder identificar al elemento.
+Luego coloque el footer, donde coloque figure para colocar las imagenes de las redes y el copyrigth.
+
+## Index.js
+Primero coloco un constante Go, que toma el elemento con id Go para y le agrego un evento click, que le da funcion de login, le doy valor al elemento con id usuario y le doy valor al elemento con id password. 
+Luego utilizo condicional if para poder determinar  el usuario y la contraseña. Tambien con locatio.pathname le coloco la ruta **** cuando lo subo a GitHub, le tengo que colocar la ruta con que subio en el index.html "SCL019-cipher/src/pagina.html", cuando lo tengo que ver en mi computador lo tengo que borrar y dejar solo "src/pagina.html"
+Luego coloco un condicional else alert, si es que colocan usuario o clave equivocada.
+
+Llamo al elemento con el id cifrar y el creo un evento click que cuando haga click ocurra una funcion
+
+Llamo al elemento con el id descifrar y el creo un evento click que cuando haga click ocurra una funcion

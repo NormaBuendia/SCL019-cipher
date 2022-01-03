@@ -69,7 +69,7 @@ body {
     margin: 0pt;
     text-align:left ;
     font-weight:bold;
-    color:blue;
+    color:dimgray;
     display:block;
     font-size:50px;
     position: relative; 
@@ -86,6 +86,19 @@ body {
     }
     }
     
+    #detalle {
+        padding: 140px; 
+        margin: 0pt;
+        text-align:center;
+        font-weight:bold;
+        color:darkblue;
+        position: absolute;
+        top: -100px;
+        left: 200px;
+        height: 20px;
+        width: 800px;
+        font-size: 40px; 
+    }
     .box input[type="Username"],
     .box input[type="Password"] {
     border: none;
@@ -99,6 +112,7 @@ body {
     top:-40px;
     }
     
+
     #Go {
         font-size: 28px;
         height: 55px;
@@ -123,13 +137,13 @@ body {
         font-size: 25px;
         position: relative;
         top: 250px;
-        left:640px;
+        left:620px;
         font-weight:700;
     }
     #cr {
         position: relative;
         top: 211px;
-        left: 570px;
+        left: 540px;
         height: 20px;
         width: 20px;
         display: block;
@@ -160,13 +174,13 @@ body {
         margin: 0pt;
         text-align:right;
         font-weight:bold;
-        color:blue;
+        color:dimgray;
         display:block;
         font-size:42px;
         position: absolute; 
         top:350px;
         right:220px;
-        animation: bouncel 5s alternate infinite ease-in;
+        animation: bouncel 10s alternate infinite ease-in;
         }
         @keyframes bouncel {
         0%{
@@ -183,10 +197,10 @@ body {
         height: 160px;
         border-radius:(90%);
         position:absolute;
-        top: 300px;
-        left: 1295px;
+        top: 250px;
+        left: 480px;
         background: transparent repeat;
-    animation: bouncel 5s alternate infinite ease-in;
+    animation: bouncel 10s alternate infinite ease-in;
     }
     @keyframes bouncel {
     0%{

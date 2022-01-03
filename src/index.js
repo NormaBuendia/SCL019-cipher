@@ -2,6 +2,7 @@ import cipher from './cipher.js';
 
 //crear usuario y contraseña
 const botonGo = document.getElementById("Go");
+
 if(botonGo){
     document.getElementById("Go").addEventListener("click", function login(){
         //tomar el elemento y cuando haga click pase lo siguiente:
@@ -11,7 +12,7 @@ if(botonGo){
     
     if(usuario == "norma" && clave == "seguro"){
         //si el usuarios es ... y la clave es ...
-        location.pathname = "src/pagina.html";
+        location.pathname = "SCL019-cipher/src/pagina.html";
         //ubicacion ruta de la pagina
     }
     
@@ -33,38 +34,37 @@ if(botonGo){
 //});
 //}
 document.getElementById("cifrar").addEventListener("click",function(){ 
-    // tomo el elemento getElmen.. y cuando hago click pasa lo siguiente:
+    // tomo el elemento getElmen.. con el id cifrar y cuando hago click pasa lo siguiente:
     let text = document.getElementById("mensaje").value; 
-    //sacar el texto que tiene el mensaje y con value el valor del mensaje
+    //sacar el texto que toma con el elemento en el id mensaje 
     let offSet = parseInt(document.getElementById("desplazamiento").value);
-    // sacar el desplazamiento y obtener su valor
+    // sacar el desplazamiento que toma en el elemento con  el id desplazamiento, 
+    //utilizo parseInt para asegurar que me me devuelva un numero
     let cadena = cipher.encode(offSet, text);
  //traigo el valor de cipher js, alberga la funcion decode, 
     let finalText = document.getElementById("mensaje2");
-    //el texto final cifrado se mostrara en mensaje 2
+    //el texto final cifrado se mostrara en el elemento con id  mensaje 2
     finalText.value=cadena;
     //al final devuelva un texto cifrado 
-},true);//al hacer click en este boton se obtiene el mensaje y se realiza la funcion
+},true);//para la frase de burbujeo, de afuera hacia adentro
 
 //document.getElementById("mensaje2").addEventListener("keyup",mayus);
     
     document.getElementById("descifrar").addEventListener("click",function(){
-// tomo el elemento getElmen.. y cuando hago click, captura de eventos, con el id descifrar
+// tomo el elemento getElmen.. y le agrago un evento y cuando haga click ocurre
    let text = document.getElementById("mensaje").value;
-   //sacar el texto que tiene el mensaje, que es el elemento en concreto y con value el valor del mensaje
+   //sacar el texto que tiene el mensaje, que es el elemento en concreto con id mensaje
    let offSet = parseInt(document.getElementById("desplazamiento").value);
    //let offSetNumber = Number.parseInt(offSet);
-   // sacar el desplazmiento y obtener su valor
+   // sacar el desplazmiento tomar el elemento con id desplazamiento y se mostrara
    let cadena = cipher.decode(offSet, text);
    //traigo el valor de cipher.js, alberga la funcion decode, return cadena
    let finalText = document.getElementById("mensaje2");
-   // el texto final descifrado se mostrara  en mensaje 2
+   // el texto final descifrado se mostrara  en el elemento con id  mensaje 2
    finalText.value=cadena;
    // al final devuelva un texto cifrado 
     
     },true);
-
-
 //para la frase de burbujeo, de afuera hacia adentro
 
 
