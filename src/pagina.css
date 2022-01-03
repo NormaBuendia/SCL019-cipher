@@ -3,14 +3,22 @@ body {
     margin: 0;
     padding:0 ;
     background:url(./img/FondoCrash.jpg) no-repeat center top;
-    background-size: cover;
+    background-size: 110%;
     font-family: sans-serif;
     height:100vh;
     text-align: center;
     align-items: center;
     color: white;
+    animation:move 10s infinite linear alternate;
+}
+@keyframes move {
+   from {
+     background-position: top left;
    }
-
+   to {
+   background-position: top right;
+   }  
+}
    .box .logotipo {
     margin: 0;
     padding: 0mm;
@@ -37,8 +45,29 @@ body {
     margin: 0;
     padding: 0;
     width: 180px;
-    height: 30px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: lightgray;
+    }
+    
+    #mensaje:hover {
+    background-color:lightslategrey; 
+}
+
+   #mensaje2{
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 40px;
+    border-radius: 5%;
+    border-color:lightgray ;
+    background-color: lightgray;  
+    
   }
+   #mensaje2:hover{
+       background-color:lightslategrey;
+   }
+
 
     h1 {
     margin: 0;
@@ -70,7 +99,7 @@ body {
         height: 65px;
         border-radius: 50% ;
         position:absolute;
-        top:280px;
+        top:285px;
         left: calc(45px);
         color: red;
         background-color: grey;
@@ -86,7 +115,7 @@ body {
         height: 65px;
         border-radius: 50% ;
         position:absolute;
-        top:280px;
+        top:285px;
         left: calc(130px);
         color: red;
         background-color: grey;
@@ -137,9 +166,9 @@ body {
 }
 aside {
     position: relative;
-    top: -400px;
-    left:290px;
-    font-size: 30px;
+    top: -500px;
+    left:220px;
+    font-size: 40px;
     height: 600px;
     width: 600px;
     display: block;
@@ -150,8 +179,8 @@ aside {
 }
 #regresar {
     position: relative;
-    top: -1000px;
-    left:650px;
+    top: -1100px;
+    left:600px;
     font-size: 30px;
     height:0;
     width: 0;
@@ -187,3 +216,24 @@ aside {
     background:transparent;
     border-color:transparent;
 }
+.video{
+    margin: 0;
+    padding: 0mm;
+    width: 120px;
+    height: 180px;
+    border-radius:(90%);
+    position:absolute;
+    top: 190px;
+    left: 450px;
+    cursor: pointer;
+    animation:move 10s infinite linear alternate;
+    }
+    @keyframes move {
+       from {
+         background-position: top left;
+       }
+       to {
+       background-position: top right;
+       }  
+    }
+     

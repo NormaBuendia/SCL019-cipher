@@ -11,7 +11,7 @@ if(botonGo){
     
     if(usuario == "norma" && clave == "seguro"){
         //si el usuarios es ... y la clave es ...
-        location.pathname = "src/pagina.html";
+        location.pathname = "SCL019-cipher/src/pagina.html";
         //ubicacion ruta de la pagina
     }
     
@@ -20,47 +20,51 @@ if(botonGo){
     
     });
 }
-else{
-
+//else{}
 //window.addEventListener("load", inicio, true);
-function mayus(e) {
-    e.target.value = e.target.value.toUpperCase();
+
+//document.getElementById("mensaje").addEventListener("keyup",mayus);
+//function mayus(e) {
+   // e.target.value = e.target.value.toUpperCase();
     //el target es el input que tiene el value, donde sucede
 //function inicio (){
     //document.getElementById("mensaje").addEventListener("keyup", function(){
-     //this.value = this.value.toUpperCase();   
-   // });
-}
-
-document.getElementById("mensaje").addEventListener("keyup",mayus);
+     //this.value = this.value.toUpperCase(); 
+//});
+//}
 document.getElementById("cifrar").addEventListener("click",function(){ 
     // tomo el elemento getElmen.. y cuando hago click pasa lo siguiente:
     let text = document.getElementById("mensaje").value; 
     //sacar el texto que tiene el mensaje y con value el valor del mensaje
-    let offSet = document.getElementById("desplazamiento").value;
+    let offSet = parseInt(document.getElementById("desplazamiento").value);
     // sacar el desplazmiento y obtener su valor
-    let codedText = cipher.code(text,offSet);
- 
+    let cadena = cipher.encode(text,offSet);
+ //traigo el valor de cipher js
     let finalText = document.getElementById("mensaje2");
-    finalText.value=codedText;
-    //al final devuelva un texto con dezplazamiento y se escriba en donde dice mensaje2
-},true);
+    //el texto final cifrado se mostrara en mensaje 2
+    finalText.value=cadena;
+    //al final devuelva un texto cifrado 
+},true);//al hacer click en este boton se obtiene el mensaje y se realiza la funcion
 
-document.getElementById("mensaje2").addEventListener("keyup",mayus);
+//document.getElementById("mensaje2").addEventListener("keyup",mayus);
     
     document.getElementById("descifrar").addEventListener("click",function(){
 // tomo el elemento getElmen.. y cuando hago click, captura de eventos:
    let text = document.getElementById("mensaje").value;
    //sacar el texto que tiene el mensaje, que es el elemento en concreto y con value el valor del mensaje
-   let offSet = document.getElementById("desplazamiento").value;
-   //let offsetNumber = Number.parseInt(offSet);
+   let offSet = parseInt(document.getElementById("desplazamiento").value);
+   //let offSetNumber = Number.parseInt(offSet);
    // sacar el desplazmiento y obtener su valor
-   let decodedText = cipher.decode(text,offSet);
-   //traigo el valor de index.js
+   let cadena = cipher.decode(text,offSet);
+   //traigo el valor de cipher.js
    let finalText = document.getElementById("mensaje2");
-   finalText.value=decodedText;
+   // el texto final descifrado se mostrara  en mensaje 2
+   finalText.value=cadena;
+   // al final devuelva un texto cifrado 
     
-},true);}
+    },true);
+
+
 //para la frase de burbujeo, de afuera hacia adentro
 
 

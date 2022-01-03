@@ -1,162 +1,191 @@
 
 body {
-margin: 0;
-padding:0 ;
-background:url(./img/FondoCrash.jpg) no-repeat center top;
-background-size: cover;
-font-family: sans-serif;
-height: 100vh;
-}
-
-.box {
-width: 250px;
-height:400px;
-background: #000;
-color: #fff;
-top: 50%;
-left: 50%;
-position: absolute;
-transform: translate(-50%,-50%);
-box-sizing: border-box;
-border-radius: 10%;
-padding: 70px,30px;
-}
-
-.box .logotipo {
-margin: 0;
-padding: 0mm;
-width: 150px;
-height: 150px;
-border-radius: 50% ;
-position:absolute;
-top: -50px;
-left: calc(50px);
-}
-
-.box label {
-margin: 0;
-padding: 0 0 0 20px;
-display: block;
-font-weight: bold;
-position: relative;
-top: -40px;
-}
-
-.box h1 {
-margin: 30px;
-padding: 80px 30px 30px 20px;
-font-size: 20px;
-}
-.box input {
-margin:0;
-padding: 0;
-width: 70%; 
-margin-bottom: 20px;
-position: relative; 
-left: calc(30px);
-}
-
-#title {
-padding: 140px; 
-margin: 0pt;
-text-align:left ;
-font-weight:bold;
-color:blue;
-display:block;
-font-size:50px;
-position: relative; 
-top:200px;
-max-width: 250px;
-animation: bouncel 5s alternate infinite ease-in;
-}
-@keyframes bouncel {
-0%{
-transform:translate(20%);
-} 
-100%{
-transform:traslate(60%);
-}
-}
-
-.box input[type="Username"],
-.box input[type="Password"] {
-border: none;
-border-bottom: 1px solid #fff;
-background: transparent;
-outline:none;
-height:40px;
-color: #fff;
-font-size:16px;
-position: relative;
-top:-40px;
-}
-#Go {
-    font-size: 28px;
-    height: 55px;
-    width: 55px;
-    display: block;
-    border-radius: 25px;
-    background: red;
-    background-size: 500px;
+    margin: 0;
+    padding:0 ;
+    background:url(./img/FondoCrash.jpg) no-repeat center top;
+    background-size: 110%;
+    font-family: sans-serif;
+    height: 100vh;
+    animation:move 10s infinite linear alternate;
+    }
+    @keyframes move {
+       from {
+         background-position: top left;
+       }
+       to {
+       background-position: top right;
+       }  
+    }
+    .box {
+    width: 250px;
+    height:400px;
+    background: #000;
     color: #fff;
-    position: relative;
-    top: -30px;
-    left: 90px;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
-    background-color: red;
-    border-color: red;
-    cursor: pointer;
-}
-
-#footer {
-    font-size: 25px;
-    position: relative;
-    top: 250px;
-    left:660px;
-    font-weight:700;
-}
-#cr {
-    position: relative;
-    top: 211px;
-    left: 600px;
-    height: 20px;
-    width: 20px;
+    top: 50%;
+    left: 48.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 10%;
+    padding: 70px,30px;
+    }
+    
+    .box .logotipo {
+    margin: 0;
+    padding: 0mm;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+    position:absolute;
+    top: -50px;
+    left: calc(50px);
+    }
+    
+    .box label {
+    margin: 0;
+    padding: 0 0 0 20px;
     display: block;
-}
-#face {
+    font-weight: bold;
     position: relative;
-    top: 230px;
-    left: 650px;
-    height: 40px;
-    width: 40px;
-    display: block;
-    background:transparent;
-    border-color:transparent;
-
-}
-#insta {
-    position: relative;
-    top: 190px;
-    left: 710px;
-    height: 40px;
-    width: 40px;
-    display: block;
-    background:transparent;
-    border-color:transparent;
-}
-#chicas {
-    padding: 0px 0px 50px 100px; 
+    top: -40px;
+    }
+    
+    .box h1 {
+    margin: 30px;
+    padding: 80px 30px 30px 20px;
+    font-size: 20px;
+    }
+    .box input {
+    margin:0;
+    padding: 0;
+    width: 70%; 
+    margin-bottom: 20px;
+    position: relative; 
+    left: calc(30px);
+    }
+    
+    #title {
+    padding: 140px; 
     margin: 0pt;
-    text-align:right;
+    text-align:left ;
     font-weight:bold;
     color:blue;
     display:block;
-    font-size:42px;
-    position: absolute; 
-    top:350px;
-    right:150px;
+    font-size:50px;
+    position: relative; 
+    top:200px;
+    max-width: 250px;
+    animation: bouncel 10s alternate infinite ease-in;
+    }
+    @keyframes bouncel {
+    0%{
+    transform:translate(20%);
+    } 
+    100%{
+    transform:traslate(60%);
+    }
+    }
+    
+    .box input[type="Username"],
+    .box input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline:none;
+    height:40px;
+    color: #fff;
+    font-size:16px;
+    position: relative;
+    top:-40px;
+    }
+    
+    #Go {
+        font-size: 28px;
+        height: 55px;
+        width: 55px;
+        display: block;
+        border-radius: 25px;
+        background: red;
+        background-size: 500px;
+        color: #fff;
+        position: relative;
+        top: -30px;
+        left: 90px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+        background-color: red;
+        border-color: red;
+        cursor: pointer;
+    }
+    
+    #footer {
+        font-size: 25px;
+        position: relative;
+        top: 250px;
+        left:640px;
+        font-weight:700;
+    }
+    #cr {
+        position: relative;
+        top: 211px;
+        left: 570px;
+        height: 20px;
+        width: 20px;
+        display: block;
+    }
+    #face {
+        position: relative;
+        top: 230px;
+        left: 630px;
+        height: 40px;
+        width: 40px;
+        display: block;
+        background:transparent;
+        border-color:transparent;
+    
+    }
+    #insta {
+        position: relative;
+        top: 190px;
+        left: 680px;
+        height: 40px;
+        width: 40px;
+        display: block;
+        background:transparent;
+        border-color:transparent;
+    }
+    #chicas {
+        padding: 0px 0px 50px 100px; 
+        margin: 0pt;
+        text-align:right;
+        font-weight:bold;
+        color:blue;
+        display:block;
+        font-size:42px;
+        position: absolute; 
+        top:350px;
+        right:220px;
+        animation: bouncel 5s alternate infinite ease-in;
+        }
+        @keyframes bouncel {
+        0%{
+        transform:translate(20%);
+        } 
+        100%{
+        transform:traslate(60%);
+        }
+        }   
+    .video{
+        margin: 0;
+        padding: 0mm;
+        width: 160px;
+        height: 160px;
+        border-radius:(90%);
+        position:absolute;
+        top: 300px;
+        left: 1295px;
+        background: transparent repeat;
     animation: bouncel 5s alternate infinite ease-in;
     }
     @keyframes bouncel {
@@ -167,3 +196,4 @@ top:-40px;
     transform:traslate(60%);
     }
     }   
+    
