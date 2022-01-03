@@ -1,7 +1,7 @@
 
 const cipher = {//cipher es un objeto
 
-encode: function(text,offSet){ 
+encode: function(offSet, text){ 
   if (offSet === 'null' || text.length === 0 || text === "null" || offSet === 0) {
     throw new TypeError();
    }
@@ -34,13 +34,13 @@ encode: function(text,offSet){
     asciiOffSet = (ascii - 97 + offSet) % 26 + 97;
     // varible con formula del codigo ascii para el desplazamiento para cifrar, letras minusculas
     cadena += String.fromCharCode(asciiOffSet);
-    // se le suma  la  nueva posicion de la letra,
+    // concatena  la  nueva posicion de la letra o texto
     //me devuelve una cadena con las letras en su nueva posicion
   } else { 
     // tambien si no esta entre los otros valores(mayusculas y minusculas)
   //console.log(codedText); 
   cadena += String.fromCharCode(offSet); 
-  // se le suma el nuevo valor del desplazamiento
+  // concatena el nuevo valor del desplazamiento
   }}
 
   //console.log(cadena);
@@ -49,7 +49,7 @@ return cadena;
 //retorna la cadena de texto
 },
 
-decode: function(text, offSet){ //que le pasa al texto y al desplazamiento
+decode: function(offSet, text){ //que le pasa al texto y al desplazamiento
   if (offSet === 'null' || text.length === 0 || offSet === 0){
    throw new TypeError();
   }
@@ -72,7 +72,7 @@ decode: function(text, offSet){ //que le pasa al texto y al desplazamiento
 //formula codigo ascii, para letras mayusculas
 //console.log(asciiOffSet);
 cadena += String.fromCharCode(asciiOffSet); 
-//me devuelve una cadena con las letras en su nueva posicion
+//concatena una cadena de texto en su nueva posicion
 
  } else if ((ascii>=97) && (ascii<=122)) {
    asciiOffSet = (ascii  - 122 - offSet) % 26 + 122;
@@ -84,7 +84,7 @@ cadena += String.fromCharCode(asciiOffSet);
 //de numero ascii a cadena de alfabeto
 cadena+=String.fromCharCode(ascii);
 //console.log(cadena);
- //me devuelve una cadena con las letras en su nueva posicion
+ //me devuelve una cadena de texto en su nueva posicion
   }
 }
   //console.log(array) 

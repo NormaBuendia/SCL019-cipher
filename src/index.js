@@ -11,7 +11,7 @@ if(botonGo){
     
     if(usuario == "norma" && clave == "seguro"){
         //si el usuarios es ... y la clave es ...
-        location.pathname = "SCL019-cipher/src/pagina.html";
+        location.pathname = "src/pagina.html";
         //ubicacion ruta de la pagina
     }
     
@@ -37,9 +37,9 @@ document.getElementById("cifrar").addEventListener("click",function(){
     let text = document.getElementById("mensaje").value; 
     //sacar el texto que tiene el mensaje y con value el valor del mensaje
     let offSet = parseInt(document.getElementById("desplazamiento").value);
-    // sacar el desplazmiento y obtener su valor
-    let cadena = cipher.encode(text,offSet);
- //traigo el valor de cipher js
+    // sacar el desplazamiento y obtener su valor
+    let cadena = cipher.encode(offSet, text);
+ //traigo el valor de cipher js, alberga la funcion decode, 
     let finalText = document.getElementById("mensaje2");
     //el texto final cifrado se mostrara en mensaje 2
     finalText.value=cadena;
@@ -49,14 +49,14 @@ document.getElementById("cifrar").addEventListener("click",function(){
 //document.getElementById("mensaje2").addEventListener("keyup",mayus);
     
     document.getElementById("descifrar").addEventListener("click",function(){
-// tomo el elemento getElmen.. y cuando hago click, captura de eventos:
+// tomo el elemento getElmen.. y cuando hago click, captura de eventos, con el id descifrar
    let text = document.getElementById("mensaje").value;
    //sacar el texto que tiene el mensaje, que es el elemento en concreto y con value el valor del mensaje
    let offSet = parseInt(document.getElementById("desplazamiento").value);
    //let offSetNumber = Number.parseInt(offSet);
    // sacar el desplazmiento y obtener su valor
-   let cadena = cipher.decode(text,offSet);
-   //traigo el valor de cipher.js
+   let cadena = cipher.decode(offSet, text);
+   //traigo el valor de cipher.js, alberga la funcion decode, return cadena
    let finalText = document.getElementById("mensaje2");
    // el texto final descifrado se mostrara  en mensaje 2
    finalText.value=cadena;
