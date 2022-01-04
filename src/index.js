@@ -41,12 +41,12 @@ document.getElementById("cifrar").addEventListener("click",function(){
     // sacar el desplazamiento que toma en el elemento con  el id desplazamiento, 
     //utilizo parseInt para asegurar que me me devuelva un numero
     let cadena = cipher.encode(offSet, text);
- //traigo el valor de cipher js, alberga la funcion decode, 
+ //traigo el valor de cipher js, alberga la funcion encode, 
     let finalText = document.getElementById("mensaje2");
     //el texto final cifrado se mostrara en el elemento con id  mensaje 2
     finalText.value=cadena;
     //al final devuelva un texto cifrado 
-},true);//para la frase de burbujeo, de afuera hacia adentro
+},);//para la frase de burbujeo, de afuera hacia adentro
 
 //document.getElementById("mensaje2").addEventListener("keyup",mayus);
     
@@ -64,7 +64,7 @@ document.getElementById("cifrar").addEventListener("click",function(){
    finalText.value=cadena;
    // al final devuelva un texto cifrado 
     
-    },true);
+    },);
 //para la frase de burbujeo, de afuera hacia adentro
 
 

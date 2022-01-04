@@ -2,7 +2,7 @@
 const cipher = {//cipher es un objeto
 
 encode: function(offSet, text){ 
-  if (offSet === 'null' || text.length === 0 || text === "null" || offSet === 0) {
+  if (offSet === '' || text.length === 0 || offSet === 0) {
     throw new TypeError();
    }
   // En este code a traves de una funcion a la que le pasamos al texto y el desplazamiento
@@ -40,17 +40,17 @@ encode: function(offSet, text){
     // tambien si no esta entre los otros valores(mayusculas y minusculas)
   //console.log(codedText); 
   cadena += String.fromCharCode(offSet); 
-  // concatena el nuevo valor del desplazamiento
+  // concatena el nuevo valor y lo convierte en  texto 
   }}
 
   //console.log(cadena);
 
 return cadena;
-//retorna la cadena de texto
+//retorna la cadena de texto a index js
 },
 
 decode: function(offSet, text){ //que le pasa al texto y al desplazamiento
-  if (offSet === 'null' || text.length === 0 || offSet === 0){
+  if (offSet === '' || text.length === 0 || offSet === 0){
    throw new TypeError();
   }
    let cadena = '';
@@ -84,12 +84,12 @@ cadena += String.fromCharCode(asciiOffSet);
 //de numero ascii a cadena de alfabeto
 cadena+=String.fromCharCode(ascii);
 //console.log(cadena);
- //me devuelve una cadena de texto en su nueva posicion
+ //me devuelve una cadena de texto con su nueva posicion
   }
 }
   //console.log(array) 
 return cadena;
-// retorna el arreglo
+// retorna la cadena de texto al index.js
    }
   }
   
