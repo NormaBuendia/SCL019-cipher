@@ -5,7 +5,7 @@ body {
     background:url(./img/FondoCrash.jpg) no-repeat center top;
     background-size: 110%;
     font-family: sans-serif;
-    height:100vh;
+    height:100px;
     text-align: center;
     align-items: center;
     color: white;
@@ -165,7 +165,7 @@ body {
     position: relative;
     top: 100px;
     left:30px;
-    font-weight:700;
+    font-weight:bold;
     color: black;
  }
 #cr {
@@ -186,7 +186,7 @@ aside {
     width: 600px;
     display: block;
     color:dimgray;
-    font-weight:600;
+    font-weight:bold;
     font-family: sans-serif;
     
 }

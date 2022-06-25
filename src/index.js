@@ -12,7 +12,7 @@ if(botonGo){
     
     if(usuario == "norma" && clave == "seguro"){
         //si el usuarios es ... y la clave es ...
-        location.pathname = "SCL019-cipher/src/pagina.html";
+        location.pathname = "pagina.html";
         //ubicacion ruta de la pagina
     }
     
